@@ -11,42 +11,52 @@
 <p> Olá, seja bem-vindo(a), preencha todos os campos para prosseguir com seu cadastro </p>
 
 <h2> Dados pessoais </h2>
+<br>
 <form>
 <label for="nome"> Nome: </label>
-
+<input type="text" name="Nome" id="nome" required>
 <label for="cpf"> CPF: </label>
-    
+    <input type="text" name="CPF" id="cpf" required>
 <label for="rg"> RG: </label>
-
+<input type="text" name="rg" id="rg">
 <label for="sexo"> Sexo: </label>
+<select name="sexo" id="sexo">
+<option> Masculino </option>
+<option> Feminino </option>
+<option> Outro </option>
+</select>
 </form>
+<br>
 
 <h2> Endereço </h2>
+<br>
 <form>
 <label for="cep"> CEP: </label>
-
+<input type="text" name="cep" id="cep" required>
 <label for="rua"> Rua: </label>
-
+<input type="text" name="rua" id="rua" required>
 <label for="numero"> Número: </label>
-
+<input type="text" name="numero"id="numero" required>
 <label for="complemento"> Complemento: </label>
-
+<input type="text" name="complemento" id="complemento">
 <label for="bairro"> Bairro: </label>
-
+<input type="text" name="bairro" id="bairro" required>
 <label for="cidade"> Cidade: </label>
-
+<input type="text" name="cidade" id="cidade" required>
 <label for="estado"> Estado: </label>
-
+<input type="text" name="estado" id="estado" required>
 </form>
+<br>
 
 <h2> Contato </h2>
+<br>
 <form>
 <label for="email"> E-mail: </label>
-
+<input type="email" name="email" id="email">
 <label for="fixo"> Telefone fixo: </label>
-
+<input type="text" name="telefone" id="telefone" required>
 <label for="celular"> Telefone celular: </label>
-
+<input type="text" name="celular" id="celular" required>
 </form>
 
 </body>
