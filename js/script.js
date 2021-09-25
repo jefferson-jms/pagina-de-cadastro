@@ -1,3 +1,6 @@
+
+//script para adicionar endereço automaticamente após ser inserido o cep.
+
 		$("#cep").focusout(function(){
 			$.ajax({
 				url: 'https://viacep.com.br/ws/'+$(this).val()+'/json/unicode/',
@@ -15,3 +18,4 @@
 				}
 			});
 		});
+

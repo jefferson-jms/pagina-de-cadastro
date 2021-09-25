@@ -5,15 +5,18 @@
 <meta charset="UTF-8"
 <link href="css/estilo.css" rel="stylesheet">
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+
 </head>
 <body>
 <h1> Página de cadastro </h1>
 <br>
 <p> Olá, seja bem-vindo(a), preencha todos os campos para prosseguir com seu cadastro </p>
-
-<h2> Dados pessoais </h2>
 <br>
 <form>
+<h2> Dados pessoais </h2>
+<br>
+<fieldset>
 <label for="nome"> Nome: </label>
 <input type="text" name="Nome" id="nome" required>
 <label for="cpf"> CPF: </label>
@@ -26,12 +29,12 @@
 <option> Feminino </option>
 <option> Outro </option>
 </select>
-</form>
+</fieldset>
 <br>
 
 <h2> Endereço </h2>
 <br>
-<form>
+<fieldset>
 <label for="cep"> CEP: </label>
 <input type="text" name="cep" id="cep" required>
 <label for="rua"> Rua: </label>
@@ -46,20 +49,24 @@
 <input type="text" name="cidade" id="cidade" required>
 <label for="estado"> Estado: </label>
 <input type="text" name="estado" id="estado" required>
-</form>
+</fieldset>
 <br>
 
 <h2> Contato </h2>
 <br>
-<form>
+<fieldset>
 <label for="email"> E-mail: </label>
 <input type="email" name="email" id="email">
-<label for="fixo"> Telefone fixo: </label>
+<label for="telefone"> Telefone residencial: </label>
 <input type="text" name="telefone" id="telefone" required>
 <label for="celular"> Telefone celular: </label>
 <input type="text" name="celular" id="celular" required>
+<input type="submit" name="Enviar" id="enviar">
+</fieldset>
 </form>
 
+<script type="text/javascript" src="js/mascara.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
 </body>
+
 </html>
