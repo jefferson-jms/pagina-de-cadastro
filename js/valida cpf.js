@@ -34,8 +34,7 @@ return true;
 
 function TestaCPF(el){
 if( !_cpf(el.value) ){
-alert("CPF inválido!" + el.value);
-// apaga o valor
+//cpf não sendo válido apaga o valor
 el.value = "";
 }
 }
