@@ -2,8 +2,8 @@
 <html lang="pt-br">
 <head>
     <title> Página de cadastro </title>
-<meta charset="UTF-8"
-<link href="css/estilo.css" rel="stylesheet">
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="css/estilo.css" media="screen" />
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
 
@@ -13,10 +13,11 @@
 <br>
 <p> Olá, seja bem-vindo(a), preencha todos os campos para prosseguir com seu cadastro </p>
 <br>
-<form>
-<h2> Dados pessoais </h2>
-<br>
+<div id="area">
+<form id="formulario">
 <fieldset>
+<legend> Dados pessoais </legend>
+<br>
 <label for="nome"> Nome: </label>
 <input type="text" name="Nome" id="nome" required>
 <label for="cpf"> CPF: </label>
@@ -29,12 +30,10 @@
 <option> Feminino </option>
 <option> Outro </option>
 </select>
-</fieldset>
 <br>
 
-<h2> Endereço </h2>
+<legend> Endereço </legend>
 <br>
-<fieldset>
 <label for="cep"> CEP: </label>
 <input type="text" name="cep" id="cep" required>
 <label for="rua"> Rua: </label>
@@ -49,12 +48,10 @@
 <input type="text" name="cidade" id="cidade" required>
 <label for="estado"> Estado: </label>
 <input type="text" name="estado" id="estado" required>
-</fieldset>
 <br>
 
-<h2> Contato </h2>
+<legend> Contato </legend>
 <br>
-<fieldset>
 <label for="email"> E-mail: </label>
 <input type="email" name="email" id="email">
 <label for="telefone"> Telefone residencial: </label>
@@ -64,6 +61,7 @@
 <input type="submit" name="Enviar" id="enviar">
 </fieldset>
 </form>
+</div>
 
 <script type="text/javascript" src="js/mascara.js"></script>
 <script type="text/javascript" src="js/script.js"></script>

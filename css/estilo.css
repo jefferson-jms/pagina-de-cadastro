@@ -1,3 +1,72 @@
 body {
     background-color: blue;
 }
+/*Formatação Formulário*/
+
+form {
+    /* Apenas para centralizar o form na página */
+    margin: 0 auto;
+    width: 400px;
+    /* Para ver as bordas do formulário */
+    padding: 1em;
+    border-radius: 50px;
+    border: 5px solid #90EE90;
+    padding-bottom: 13px;
+    margin-bottom: 15px;
+}
+
+form div + div {
+    margin-top: 1em;
+}
+
+label {
+    /*Para ter certeza que todas as labels tem o mesmo tamanho e estão propriamente alinhadas */
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+    font-family: 'Open Sans', sans-serif;
+}
+
+input {
+    /* Para certificar-se que todos os campos de texto têm as mesmas configurações de fonte.*/
+    font-family: 'Open Sans', sans-serif;
+    
+    
+    /* Para dar o mesmo tamanho a todos os campo de texto */
+    width: 300px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    
+    
+    /* Para harmonizar o look & feel das bordas nos campos de texto*/
+    border: 3px solid #90EE90;
+    border-radius: 50px;
+}
+.button {
+    /* Para posicionar os botões para a mesma posição dos campos de texto */
+    padding-left: 90px; /* mesmo tamanho que os elementos do tipo label */
+}
+button {
+    /* Esta margem extra representa aproximadamente o mesmo espaço que o espaço entre as labels e os seus campos de texto*/
+    margin-left: .5em;
+    color: rgb(0, 0, 0);
+    background-color: rgb(230, 160, 30);
+}
+img.logo-final{
+    padding-left: 1cm;
+
+}
+select {
+    font-family: 'Open Sans', sans-serif;
+    
+    
+    /* Para dar o mesmo tamanho a todos os campo de texto */
+    width: 300px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    
+    
+    /* Para harmonizar o look & feel das bordas nos campos de texto*/
+    border: 3px solid #90EE90;
+    border-radius: 50px;
+}
