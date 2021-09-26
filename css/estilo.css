@@ -50,7 +50,7 @@ input {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     /* Para harmonizar o look & feel das bordas nos campos de texto*/
-    border: 3px solid #90EE90;
+    border: 3px solid #2da72d;
     border-radius: 50px;
 }
 
@@ -70,14 +70,14 @@ select {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     /* Para harmonizar o look & feel das bordas nos campos de texto*/
-    border: 3px solid #90EE90;
+    border: 3px solid #2da72d;
     border-radius: 50px;
 }
 footer#footer{
     clear: both;
     border-top: 1px solid rgb(47, 78, 46);
     margin: 10px;
- background-color: red;   
+ background-color: #b31e1e;   
 }
 footer#footer p{
     text-align: center;
